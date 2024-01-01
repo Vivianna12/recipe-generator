@@ -14,18 +14,23 @@
         <h1>AI recipe generator 🥘</h1>
       </header>
       <main>
-        <form id="recipe-generator-form">
-          <input
-            type="text"
-            placeholder="enter the dish you are interested in"
-            autofocus
-            required
-            class="search"
-            id="user-input"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="recipe" id="recipeOutput"></div>
+        <div class="form-wrapper">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="enter the dish you are interested in making"
+              autofocus
+              required
+              class="search"
+              id="user-input"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="example">
+            ie: banana pudding, brocolli, or penna vodka
+          </div>
+        </div>
+        <div class="recipe hidden" id="recipeOutput"></div>
       </main>
       <footer>
         The AI project was coded by
